@@ -244,7 +244,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/montserrat"
-                        android:text="Pesar Agora"
+                        android:text="Pesar agora"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp"/>
