@@ -124,7 +124,8 @@
         android:clickable="true"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="5dp"
+        android:textColor="#59c9da"/>
 
     <TextView
         android:id="@+id/text_view_criar"
@@ -134,7 +135,8 @@
         android:layout_below="@+id/text_view_esqueci"
         android:layout_alignEnd="@+id/text_view_esqueci"
         android:clickable="true"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#59c9da"/>
 
     <TextView
         android:id="@+id/text_view_sem_conta"
