@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NovoUsuarioActivity"
+    tools:context=".ui.NovoUsuarioActivity"
     android:orientation="vertical">
 
         <LinearLayout
@@ -147,12 +147,13 @@
                 android:layout_marginEnd="10dp">
 
                 <RadioButton
-                    android:id="@+id/radio_button_fem"
+                    android:id="@+id/radio_fem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Feminino"/>
 
                 <RadioButton
+                    android:id="@+id/radio_masc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Masculino"/>
