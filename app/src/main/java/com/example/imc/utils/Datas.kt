@@ -2,6 +2,7 @@ package com.example.imc.utils
 
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.util.*
 
 fun convertStringToLocalDate(brazilDate: String) : LocalDate {
 
@@ -13,3 +14,7 @@ fun convertStringToLocalDate(brazilDate: String) : LocalDate {
 
     return localDateFormat
 }
+
+//fun calcularIdade(dataAtual: Date, nascimento: Date) : Int {
+
+//}
