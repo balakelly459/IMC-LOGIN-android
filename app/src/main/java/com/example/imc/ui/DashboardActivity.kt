@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.imc.R
+import com.example.imc.utils.calcularIdade
 import com.example.imc.utils.convertBase64ToBitmap
 import org.w3c.dom.Text
 
@@ -27,6 +28,9 @@ class DashboardActivity : AppCompatActivity() {
         tvNcd = findViewById(R.id.tv_dash_ncd)
         tvPeso = findViewById(R.id.tv_peso)
         tvProfissao = findViewById(R.id.tv_profissao)
+        tvIdade = findViewById(R.id.edit_idade)
+        tvImc = findViewById(R.id.tv_dash_imc)
+        tvNcd = findViewById(R.id.tv_dash_ncd)
         tvAltura = findViewById(R.id.tv_altura)
         ivPerfil = findViewById(R.id.iv_foto_perfil)
 
@@ -41,8 +45,9 @@ class DashboardActivity : AppCompatActivity() {
         tvNome.text = arquivo.getString("nome", "")
         tvProfissao.text = arquivo.getString("profissao", "")
         tvAltura.text = arquivo.getFloat("altura", 0.0f).toString()
+        tvIdade.text = calcularIdade(arquivo.getString("dataNascimento", "")!!).toString()
 
-        val bitmap = convertBase64ToBitmap(arquivo.getString.("fotoPerfil", ""))
+        val bitmap = convertBase64ToBitmap(arquivo.getString("fotoPerfil", "")!!)
         ivPerfil.setImageBitmap(bitmap)
 
     }
