@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/plate"
         android:supportsRtl="true"
         android:theme="@style/Theme.IMC">
-        <activity android:name=".ActivityPesagem"></activity>
+        <activity android:name=".ui.HistoricoActivity"></activity>
+        <activity android:name=".ActivityPesagem" />
         <activity android:name=".ui.DashboardActivity" />
         <activity android:name=".ui.NovoUsuarioActivity" />
         <activity android:name=".ui.LoginActivity">

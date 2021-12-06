@@ -17,7 +17,7 @@ fun calcularImc(context: Context) : Double {
     val pesoAtual = pesos.last().toInt()
     val altura = arquivo.getFloat("altura", 0.0f)
 
-    return pesoAtual  / (altura * altura)
+    return (pesoAtual  / (altura * altura)).toDouble()
 }
 
 fun calcularNcd(): Double {
